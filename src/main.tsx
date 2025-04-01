@@ -5,5 +5,7 @@ import { router } from './App.tsx'
 import { RouterProvider } from 'react-router'
 
 createRoot(document.getElementById('root')!).render(
-    <RouterProvider router={ router }/>
+    <StrictMode>
+        <RouterProvider router={ router }/>
+    </StrictMode>
 )
