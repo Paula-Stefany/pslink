@@ -1,0 +1,10 @@
+/* O index.css é o css global, e o main é o primeiro arquivo a ser executado */
+@import "tailwindcss";
+@import '@fontsource/poppins';
+@import '@fontsource/poppins/500.css';
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(oklch(0.455 0.188 13.697), oklch(0.41 0.159 10.272),  oklch(0.284 0.109 3.907));
+    font-family: 'Poppins', sans-serif;
+}
