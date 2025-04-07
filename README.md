@@ -1,54 +1,26 @@
-# React + TypeScript + Vite
+# PsLink
+O PsLink é um LinkTree editável, onde o cliente consegue criar, exibir e excluir seus botões juntamente com suas respectivas URLS e também suas redes sociais.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Visão Geral
+Este projeto foi desenvolvido utilizando as tecnologias React JS, TypeScript, Tailwind CSS, Firebase, HTML.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Funcionalidades
+- Botões editáveis: O Cliente consegue estilizar as cor de seus botões, o nome, e também excluí-los.
+- Autenticação e Armazenamento: O firebase foi utilizado para autenticar o cliente, e armazenar os dados dos botões
+- Layout responsivo: O tailwind CSS foi utilizado para trazer responsividade ao LinkTree
+- Estrutura HTML semântica: Organiza o conteúdo de forma que melhore a acessibilidade e interpretação.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Visualização
+Clique [aqui](https://pslink.vercel.app)  para visitar o site
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Screenshot do projeto
+Imagens do projeto (Mobile)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+![Imagem Pslink tela inicial Mobile](/src/assets/ScreenshotPrincipalScreen.png) ![Imagem Pslink tela de login Mobile](/src/assets/ScreenshotLoginScreen.png) ![Imagem Pslink tela da criação dos botões editáveis](/src/assets/ScreenshotEditButtonScreen.png) ![Imagem Pslink tela que adiciona os links das redes sociais](/src/assets/ScreenshotEditSocialMediaScreen.png)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Imagem da tela Inicial (Desktop)
+
+![Imagem Pslink Tela incial Desktop](/src/assets/ScreenshotPrincipalScreenDesktop.png)
